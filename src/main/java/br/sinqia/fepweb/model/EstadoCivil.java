@@ -10,11 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-@Table(name = "TB_SEXO")
+@Table(name = "TB_ESTADO_CIVIL")
 @Entity
 @Getter @Setter
 @NoArgsConstructor
-public class Sexo implements Serializable {
+public class EstadoCivil implements Serializable {
 
     @Id
     @Column(name = "ID")
