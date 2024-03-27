@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: fepweb-backend
+  h2:
+    console:
+      settings:
+        trace: true
+server:
+  port: 8080
