@@ -24,8 +24,8 @@ public class EstadoCivilService {
 
             return listaEstadosCivis;
         } catch (Exception e) {
-            logger.error("Ocorreu um erro aoo recuperar listagem de estados civis cadastrados: " + e.getMessage(), e);
-            throw new ApiFepwebException("Ocorreu um erro aoo recuperar listagem de estados civis cadastrados: " + e.getMessage());
+            logger.error("Ocorreu um erro ao recuperar listagem de estados civis cadastrados: " + e.getMessage(), e);
+            throw new ApiFepwebException("Ocorreu um erro ao recuperar listagem de estados civis cadastrados: " + e.getMessage());
         }
     }
 }

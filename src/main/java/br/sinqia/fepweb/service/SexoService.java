@@ -24,8 +24,8 @@ public class SexoService {
 
             return listaSexoCadastrados;
         } catch (Exception e) {
-            logger.error("Ocorreu um erro aoo recuperar listagem de sexo cadastrados: " + e.getMessage(), e);
-            throw new ApiFepwebException("Ocorreu um erro aoo recuperar listagem de sexo cadastrados: " + e.getMessage());
+            logger.error("Ocorreu um erro ao recuperar listagem de sexo cadastrados: " + e.getMessage(), e);
+            throw new ApiFepwebException("Ocorreu um erro ao recuperar listagem de sexo cadastrados: " + e.getMessage());
         }
     }
 }

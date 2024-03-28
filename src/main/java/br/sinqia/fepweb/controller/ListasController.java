@@ -17,7 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-// Para o ambiente real, seria considerada outra configuração para o CrossOrigin
+/**
+ * OBSERVAÇÕES
+ * Para o ambiente real, seria considerada outra configuração para o CrossOrigin
+ * Caso o model tivesse alguma informação que não pudesse ser exposta, bastaria omitir na serialização ou usar um DTO
+ */
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/listagens")
@@ -31,7 +35,6 @@ public class ListasController {
 
     private static final Logger logger = LoggerFactory.getLogger(ListasController.class);
 
-    // Caso o model tivesse alguma informação que não pudesse ser exposta, bastaria omitir na serialização ou usar um DTO
     @RequestMapping(value = "/sexos", method = RequestMethod.GET)
     public ResponseEntity<List<Sexo>> buscarListagemSexo() throws EndpointException {
         try {
